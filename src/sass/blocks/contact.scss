@@ -1,0 +1,112 @@
+.contact {
+    padding: 70px 0;
+
+    @media (max-width: $breakpoint-md) {
+        padding: 50px 0;
+    }
+}
+
+.contact__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__item {
+    padding-right: 20px;
+    width: 48%;
+
+    @media (max-width: $breakpoint-md) {
+        width: 70%;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+}
+
+.contact__item--right {
+    padding-right: 0;
+
+    @media (max-width: $breakpoint-md) {
+        margin-top: 30px;
+    }
+}
+
+
+.contact__input {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+
+    background: 0;
+    border: 1px solid lighten($light-black, 50%);
+    outline: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: $purple;
+
+    &::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: lighten($light-black, 50%);
+    }
+
+    &:focus {
+        border: 1px solid $purple;
+    }
+}
+
+.contact__textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px 20px;
+
+    background: 0;
+    border: 1px solid lighten($light-black, 50%);
+    outline: 0;
+    resize: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: lighten($light-black, 50%);
+
+    &:focus {
+        border: 1px solid $purple;
+        color: $purple;
+    }
+}
+
+.contact__logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__link {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact__img {
+    display: inline-block;
+    width: 100%;
+    max-width: 160px;
+    height: 80%;
+
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: scale(1.1,1.1);
+    }
+
+    @media (max-width: $breakpoint-md) {
+        display: block;
+        margin: 0 auto;
+    }
+}

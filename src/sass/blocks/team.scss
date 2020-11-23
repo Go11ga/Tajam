@@ -1,0 +1,108 @@
+.team {
+    padding-top: 70px;
+    padding-bottom: 68px;
+
+    background: url("../img/team-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 50px 0;
+    }
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-md) {
+        justify-content: space-around;
+    }
+}
+
+.team-cards__item {
+    margin-top: 45px;
+    width: 24%;
+    padding: 2px 2px 24px;
+
+    border: 1px solid $white;
+
+    position: relative;
+
+    @media (max-width: $breakpoint-md) {
+        width: 36%;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        width: 60%;
+    }
+}
+
+.team-cards__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+    cursor: pointer;
+
+    transition: transform .5s linear, opacity .5s linear;
+
+    &:hover {
+        transform: rotateY(180deg);
+        opacity: .2;
+
+        &+.team-cards__title {
+            opacity: 1;
+        }
+    }
+}
+
+.team-cards__title {
+    color: $aqua;
+
+    text-align: center;
+
+    opacity: 0;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 1;
+
+    transition: opacity .5s linear;
+
+    transform: translate(-50%, -30%);
+}
+
+.team-cards__name {
+    margin-top: 20px;
+
+    font-weight: 700;
+    color: $white;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.team-cards__pos {
+    margin-top: 10px;
+
+    font-size: 13px;
+    color: $white;
+
+    text-align: center;
+}
+
+.team__text {
+    margin-top: 68px;
+
+    font-weight: 300;
+    color: $white;
+
+    text-align: center;
+
+    @media (max-width: $breakpoint-sm) {
+        margin-top: 50px;
+    }
+}

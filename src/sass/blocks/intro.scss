@@ -1,0 +1,52 @@
+.intro {
+    height: 100vh;
+    padding-top: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: url("../img/intro-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    position: relative;
+
+    @media (max-width: $breakpoint-md) {
+        padding-bottom: 50px;
+        height: auto;
+    }
+}
+
+.intro--active {
+    padding-top: 250px;
+    height: auto;
+}
+
+.intro-slider__header {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: $white;
+
+    text-align: center;
+
+    &:after {
+        margin: 20px auto 25px;
+        display: block;
+        content: "";
+        width: 50px;
+        height: 2px;
+
+        background-color: $aqua;
+    }
+}
+
+.intro-slider__text {
+    font-weight: 300;
+    color: $white;
+
+    padding: 0 13%;
+
+    text-align: center;
+    line-height: 1.6;
+}

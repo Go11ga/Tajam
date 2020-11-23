@@ -1,0 +1,54 @@
+.title__title {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: $light-black;
+    line-height: 1;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title__title--left {
+    text-align: left;
+
+    @media (max-width: $breakpoint-md) {
+        text-align: center;
+    }
+}
+
+.title__title--white {
+    color: $white;
+}
+
+.title__title--works {
+    display: inline-block;
+}
+
+.title__title--bottom {
+    margin-bottom: 35px;
+}
+
+.title__suptitle {
+    margin-top: 25px;
+
+    font-weight: 300;
+    color: $light-black;
+    line-height: 1;
+
+    text-align: center;
+
+    &:after {
+        content: "";
+        display: block;
+        margin: 18px auto 0;
+
+        width: 50px;
+        height: 2px;
+        background-color: #c6c4c9;
+    }
+}
+
+.title__suptitle--white {
+    color: $white;
+}

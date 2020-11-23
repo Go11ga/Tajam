@@ -1,0 +1,54 @@
+.btn {
+    margin-top: 48px;
+
+    text-align: center;
+}
+
+.btn__link {
+    display: inline-block;
+    padding: 13px 18px 9px;
+
+    font-size: 16px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: $aqua;
+    line-height: 1;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    border: 1px solid $aqua;
+    outline: 0;
+
+    transition: background-color, .2s linear, color .2s linear;
+
+    &:hover {
+        background-color: $aqua;
+        color: $white;
+    }
+}
+
+.btn--story {
+    text-align: left;
+
+    @media (max-width: $breakpoint-md) {
+        text-align: center;
+    }
+}
+
+.btn--works {
+    margin-top: 85px;
+}
+
+.btn--contact {
+    margin-top: 25px;
+
+    text-align: left;
+
+    @media (max-width: $breakpoint-md) {
+        text-align: center;
+    }
+}
+
+
+

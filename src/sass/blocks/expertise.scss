@@ -1,0 +1,71 @@
+.expertise {
+    padding-top: 70px;
+    padding-bottom: 65px;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 50px 0;
+    }
+}
+
+.expertise__cards {
+    margin-top: 48px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expertise__item {
+    width: 33.33334%;
+    padding-top: 30px;
+    padding-bottom: 38px;
+
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+
+    @media (max-width: $breakpoint-md) {
+        width: 50%;
+
+        border: 0;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.expertise__item--norb {
+    border-right: 0;
+}
+
+.expertise__item--nobb {
+    border-bottom: 0;
+}
+
+.expertise__img {
+    display: block;
+    margin: 0 auto;
+
+    width: 50px;
+    height: 50px;
+}
+
+.expetise__header {
+    margin-top: 35px;
+
+    font-weight: 700;
+    color: $light-black;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.expertise__text {
+    margin-top: 25px;
+    padding: 0 12.5%;
+
+    font-weight: 300;
+    color: $black;
+
+    text-align: center;
+}

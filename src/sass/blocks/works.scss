@@ -1,0 +1,136 @@
+.works {
+    padding: 70px 0;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 50px 0;
+    }
+}
+
+.works__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-md) {
+        padding: 0 30px;
+    }
+}
+
+.works__link {
+    display: inline-block;
+
+    font-weight: 300;
+    color: $light-black;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+
+        border-right: 1px solid $light-black;
+        border-bottom: 1px solid $light-black;
+
+        position: absolute;
+        top: 6px;
+        right: -15px;
+        z-index: 1;
+
+        transform: rotate(-45deg);
+
+        transition: border-color .2s linear;
+    }
+
+    &:hover {
+        color: $aqua;
+
+        &:after {
+            border-color: $aqua;
+        }
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+
+        &:after {
+            right: 60px;
+        }
+    }
+}
+
+.works__gallery {
+    margin-top: 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-md) {
+        height: $works-item-height*2;
+
+        overflow-y: scroll;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        height: $works-item-height*3;
+    }
+}
+
+.works__cover {
+    margin: 0 auto;
+    width: 16.66667%;
+
+    cursor: pointer;
+
+    &:hover {
+        .works__item {
+            transform: scale(1.1,1.1);
+        }
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        width: 25%;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        width: 33.333334%;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        width: 60%;
+    }
+}
+
+.works__item {
+    height: $works-item-height;
+    width: 100%;
+
+    font-size: 0;
+
+    background-color: #b6b6b6;
+
+    transition: transform .2s linear;
+}
+
+.works__item--dimm-1 {
+    background-color: #acacac;
+}
+
+.works__item--dimm-2 {
+    background-color: #a1a1a1;
+}
+
+.works__item--dimm-3 {
+    background-color: #8a8a8a;
+}
+
+.works__item--dimm-4 {
+    background-color: #a4a4a4;
+}

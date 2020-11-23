@@ -1,0 +1,64 @@
+/* Variables */
+@import "vars";
+
+
+/* Default styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $black;
+    font-size: 14px;
+    line-height: 1.5;
+
+    background-color: $white;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow-y: hidden;
+}
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/story";
+@import "blocks/expertise";
+@import "blocks/title";
+@import "blocks/team";
+@import "blocks/works";
+@import "blocks/quote";
+@import "blocks/contact";
+@import "blocks/footer";
+
+/* Slick */
+@import "vendor/slick";
+
+/* AOS */
+@import "../../node_modules/aos/src/sass/aos";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

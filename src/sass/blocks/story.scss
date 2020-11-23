@@ -1,0 +1,121 @@
+.story__item {
+    @media (max-width: $breakpoint-md) {
+        margin: 0 auto;
+    }
+}
+
+.story__item--second {
+    margin-left: 100px;
+
+    @media (max-width: $breakpoint-md) {
+        margin: 70px auto 0;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        margin: 40px auto 0;
+    }
+}
+
+.story__inner {
+    padding: 70px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-md) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 50px 0;
+    }
+}
+
+.story__img {
+    max-width: 235px;
+    height: auto;
+}
+
+.story__text {
+    margin-top: 30px;
+
+    font-weight: 300;
+    color: $light-black;
+
+    @media (max-width: $breakpoint-sm) {
+        margin-top: 20px;
+
+        text-align: justify;
+    }
+}
+
+.story__moovie {
+    padding: 200px 0;
+
+    background: url("../img/moovie-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 100px 0;
+    }
+}
+
+.story__play {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+
+    border: 4px solid $white;
+    border-radius: 50%;
+    background-color: transparent;
+
+    cursor: pointer;
+    outline: 0;
+
+    position: relative;
+
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: $aqua;
+        border-color: $aqua;
+
+        .story__icon {
+            fill: $purple;
+        }
+
+        &+.story-moovie__text {
+            color: $aqua;
+        }
+    }
+}
+
+.story__icon {
+    width: 40px;
+    height: 40px;
+
+    fill: $white;
+
+    position: absolute;
+
+    top: 50%;
+    left: 55%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%) rotate(-90deg);
+
+    transition: fill .2s linear;
+}
+
+.story-moovie__text {
+    margin-top: 30px;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: $white;
+
+    text-align: center;
+
+    transition: all .2s linear;
+}
